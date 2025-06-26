@@ -76,7 +76,7 @@ Connect to your server via SSH and navigate into the parent directory you just c
    ~~~
    Edit the GEMINI\_API\_KEY variable and paste your secret API key from Google AI Studio.
    You can also change the OUTPUT\_LANGUAGE if desired.
-   File Encoding WARNING: When editing files on a Linux system, especially from a Windows machine, ensure your text editor is saving the file with UTF-8 encoding. Saving with a different encoding can cause the application to fail.  
+   WARNING: When editing files on a Linux system, especially from a Windows machine, ensure your text editor is saving the file with UTF-8 encoding. Saving with a different encoding can cause the application to fail.  
 7. Save and exit (Ctrl+X, Y, Enter).
 
 ### **Step 4: Launch the Service**
