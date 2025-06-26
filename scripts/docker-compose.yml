@@ -1,0 +1,11 @@
+services:
+  document-processor:
+    build: .
+    container_name: document-processor
+    restart: unless-stopped
+    volumes:
+      - /volume1/Docker/doc-automation/inbox:/docs/inbox
+      - /volume1/Famille/SCAN:/docs/processed
+      - /volume1/Docker/doc-automation/error:/docs/error
+      - /volume1/Docker/doc-automation/tmp:/docs/tmp
+      - /var/run/docker.sock:/var/run/docker.sock
