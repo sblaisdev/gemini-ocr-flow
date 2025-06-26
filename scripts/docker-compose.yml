@@ -3,6 +3,8 @@ services:
     build: .
     container_name: document-processor
     restart: unless-stopped
+    env_file:
+      - ./.env  # Explicitly load the .env file from the current directory
     volumes:
       - /volume1/Docker/doc-automation/inbox:/docs/inbox
       - /volume1/Famille/SCAN:/docs/processed
