@@ -6,8 +6,8 @@ services:
     env_file:
       - ./.env  # Explicitly load the .env file from the current directory
     volumes:
-      - /volume1/Docker/doc-automation/inbox:/docs/inbox
+      - /volume1/Docker/gemini-ocr-flow/inbox:/docs/inbox
       - /volume1/Famille/SCAN:/docs/processed
-      - /volume1/Docker/doc-automation/error:/docs/error
-      - /volume1/Docker/doc-automation/tmp:/docs/tmp
+      - /volume1/Docker/gemini-ocr-flow/error:/docs/error
+      - /volume1/Docker/gemini-ocr-flow/tmp:/docs/tmp
       - /var/run/docker.sock:/var/run/docker.sock
