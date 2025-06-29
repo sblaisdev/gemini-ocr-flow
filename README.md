@@ -6,6 +6,8 @@ This project is a self-hosted, event-driven service that creates a fully automat
 
 The system intelligently uses a "smart OCR" workflow: it first attempts to extract text locally from text-based PDFs. If and only if the document is a scanned image, it falls back to using the Google Gemini Pro API for high-fidelity OCR. The extracted text is then sent back to Gemini for advanced analysis, including document type classification, sender identification, keyword generation, and date extraction. The final output is a searchable, archival-grade PDF/A file, perfectly named, tagged with rich metadata, and timestamped to match the document's content.
 
+This was just a learning project for me, for a more complete solution see https://docs.paperless-ngx.com/
+
 ## **Features**
 
 * **Automated Ingestion:** Automatically processes any PDF file dropped into a designated inbox folder.  
